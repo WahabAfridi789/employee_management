@@ -1,0 +1,142 @@
+main {
+  margin: 80px 0;
+}
+
+.main__form__container {
+  width: 100%;
+
+  max-width: 700px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.form__header {
+  width: 100%;
+  font-size: 1.2rem;
+  color: #fff;
+  background: var(--color-bg-variant);
+  padding: 2rem;
+  font-weight: 500;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.form__container {
+  border: 2px solid var(--color-bg-variant);
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  width: 100%;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 12ch 1fr;
+  grid-gap: 5px;
+}
+
+.form__field label {
+  font-size: 1.2rem;
+  color: #000;
+  align-self: center;
+}
+
+.mandatory__astarik {
+  color: var(--color-important);
+  margin-left: 0.2rem;
+}
+
+.form__field input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--color-bg-variant);
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.form__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.form__buttons button:first-child {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.form__buttons button:first-child:hover {
+  background: var(--color-bg-variant);
+  color: #fff;
+}
+
+.form__buttons button:last-child {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.form__buttons button:last-child:hover {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .main__form__container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main__form__container {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .form__container {
+    border: 2px solid var(--color-bg-variant);
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    background: #fff;
+    overflow: hidden;
+  }
+
+  .form__field {
+    width: 100%;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+
+  .form__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  .form__buttons button:first-child {
+    font-size: 0.8rem;
+  }
+
+  .form__buttons button:last-child {
+    font-size: 1rem;
+  }
+}

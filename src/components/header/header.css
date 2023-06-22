@@ -1,0 +1,53 @@
+header {
+  width: 100%;
+  height: 100px;
+  background-color: var(--color-bg-variant);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 4rem;
+}
+
+header .logo {
+  width: 127px;
+  height: 38.32px;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+
+/* ============MEDIA QUERIES (MOBILE)============*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  header {
+    height: 20vh;
+    text-align: center;
+  }
+  .header__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    gap: 1rem;
+    padding: 0;
+  }
+
+  div .logo{
+    width: 100%;
+    text-align: center;
+  }
+
+    .header__title {
+        font-size: 1.2rem;
+    }
+}
